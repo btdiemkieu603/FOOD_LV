@@ -113,9 +113,4 @@ There is some features in FoodieAdmin website:
 
 **and other user interfaces in the process...**
 
-# Members
-[Nguyen Tien Linh](https://github.com/LinhNguyenTien) - Mobile Developer
 
-[Tran Trung Kien](https://github.com/ttk2402) - Backend Developer
-
-[Bui Thi Diem Kieu](https://github.com/btdiemkieu603) - Web Developer
