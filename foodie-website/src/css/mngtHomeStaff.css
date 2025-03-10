@@ -1,0 +1,231 @@
+ .food-display {
+  margin: 20px;
+  text-align: center;
+}
+
+.food-display h2 {
+  margin-bottom: 20px;
+}
+
+.food-display-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8%;
+}
+
+/* Card hiển thị từng bàn */
+ .table-card {
+  width: 25%;
+  /* height: 180px; */
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+}
+
+.table-card:hover {
+  transform: scale(1.05);
+}
+
+.table-number {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.table-info {
+  padding: 10px;
+  text-align: center;
+}
+
+.table-info p {
+  margin: 5px 0;
+} 
+
+/* .seating-dots {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #4CAF50; 
+  display: flex;
+  gap: 5px; 
+}
+
+.seat-dot {
+  font-size: 18px; 
+} */
+
+.table-card {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px;
+  text-align: center;
+  position: relative;
+  width: 150px;
+  /* height: 150px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.table-card:hover {
+  transform: scale(1.05);
+}
+
+/* Container của bàn và ghế */
+.table-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+/* Bàn ở giữa */
+.table-center {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #4CAF50;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Ghế xung quanh bàn */
+.seats {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seat {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #251915;
+}
+
+/* Định vị ghế theo số lượng */
+.seat-1 {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.seat-2 {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.seat-3 {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.seat-4 {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.seat-5 {
+  top: 10%;
+  left: 10%;
+}
+
+.seat-6 {
+  top: 10%;
+  right: 10%;
+}
+
+.seat-7 {
+  bottom: 10%;
+  right: 10%;
+}
+
+.seat-8 {
+  bottom: 10%;
+  left: 10%;
+}
+
+
+/* 
+.food-display {
+    margin: 20px;
+    text-align: center;
+}
+
+.food-display h2 {
+    margin-bottom: 20px;
+}
+
+.food-display-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    gap: 24px; 
+    padding: 20px;
+} */
+
+/* Thẻ bàn */
+/* .table-card {
+    width: 160px; /* Tăng kích thước để rõ ràng */
+    /* height: 160px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.table-card:hover {
+    transform: scale(1.05); Phóng to nhẹ khi hover */
+    /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+} 
+
+.table-number {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.seating-dots {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+} */

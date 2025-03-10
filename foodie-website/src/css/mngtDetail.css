@@ -1,0 +1,421 @@
+.single {
+    display: flex;
+    width: 100%;
+    
+    .singleContainer {
+      flex: 6;
+  
+      .top {
+        padding: 10px;
+        display: flex;
+        gap: 20px;
+  
+        .left {
+          flex: 1;
+          -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+          box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+          padding: 20px;
+          position: relative;
+          background-color: rgba(121, 149, 233, 0.05);
+          color:  #272acd;
+          
+          .editButton {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 5px;
+            font-size: 18px;
+            color: #191b97;
+            background-color: #643cf518;
+            cursor: pointer;
+            border-radius: 0px 0px 0px 5px;
+          }
+  
+          .item {
+            display: flex;
+            gap:30px;
+            margin-left: 30%;
+            .itemImg {
+              width: 150px;
+              height: 150px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+  
+            .details {
+              align-items: center;
+              padding: 10px;
+              /* width: 20%; */
+              /* border-bottom: 1px solid rgba(0, 0, 0, 0.1);  */
+             
+              .separator {
+                border-top: 1px solid #ccc; /* Màu và kiểu của đường gạch ngang */
+            }
+              .itemTitle {
+                margin-bottom: 10px;
+                color: #555;
+                
+              }
+  
+              .detailItem {
+                margin: 10px;
+                font-size: 16px;
+  
+                .itemKey {
+                  font-weight: bold;
+                  color: gray;
+                  margin-right: 5px;
+                }
+  
+                .itemValue {
+                  font-weight: 300;
+                }
+              }
+            }
+          }
+        }
+  
+        .right {
+          flex: 2;
+        }
+      }
+  
+      .bottom {
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        padding: 20px; 
+        margin: 10px;
+      
+        background-color: white;
+       
+
+      }
+      .bottom2 {
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        padding: 20px; 
+        margin: 10px;
+        background-color: rgba(121, 149, 233, 0.05);
+      }
+  
+      .title {
+        font-size: 24px;
+        color: #191b97;
+      }
+    }
+  }
+  
+  .itemTitle2 {
+    /* margin-bottom: 10px; */
+    color: #555;
+    margin-left: 10.4%;
+  }
+  .item2 {
+    display: flex;
+    flex: 2;
+    gap:30px;
+  }
+      .details2 {
+        /* align-items: center; */
+        width: 100%;
+        padding: 10px;
+      display: ruby;
+      /* gap:30px; */
+        /* width: 20%; */
+        
+        .detailItem2 {
+          margin-bottom: 6px;
+          font-size: 16px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px; 
+          /* justify-content: space-around; */
+          width: 40%;
+          margin-left: 52px;
+
+          .itemKey2 {
+            font-weight: bold;
+            color: gray;
+            /* margin-right: 5px; */
+            width: 33%;
+          }
+
+          .itemValue {
+            font-weight: 13px;
+          }
+        }
+      }
+
+
+
+
+.updateStatus{
+  padding-left: 6rem;
+  padding-top: 2rem;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.step-item {
+  flex: 1;
+  position: relative;
+  /* text-align: center; */
+}
+
+.step {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #007bff;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 16px;
+}
+
+.step-item:not(:first-child)::before {
+  content: '';
+  background-color: #007bff;
+  position: absolute;
+  /* width: calc(100% - 30px); */
+  width: calc(100% - 25px);
+  height: 4px;
+  top: 50%;
+  /* left: calc(50% + 15px); */
+  left: calc(-100% + 27px);
+  transform: translateY(-267%);
+}
+
+.active .step {
+  background-color: #28a745;
+  
+}
+
+.complete .step {
+  background-color: #28a745;
+}
+.complete p {
+  color: #0d3f29;
+}
+
+.complete:not(:first-child)::before,
+.active:not(:first-child)::before {
+  background-color: #28a745;
+}
+ 
+/* 
+.btn .cancel {
+  background-color: #dc3545; /* Màu đỏ khi bị hủy */
+ /* pointer-events: none; /* Vô hiệu hóa nút khi bị hủy */
+ /* cursor: not-allowed; /* Đổi con trỏ khi bị hủy */
+/*}  */
+
+.btn.hide {
+  display: none; /* Ẩn nút khi không ở bước chờ xác nhận */
+}
+
+.step-item .cancel {
+  background-color: #dc3545; /* Màu đỏ khi bị hủy */
+}
+
+.complete.cancel .step {
+  background-color: #dc3545; /* Màu đỏ khi bị hủy */
+}
+ .cancel:not(:first-child)::before {
+  background-color: #dc3545;
+}
+/* .messageStatus{
+  padding-top: 30px;
+  font-size: 18px;
+  padding-bottom: 15px;
+} */
+.messageStatus_complete{
+  color: green;
+  /* padding-top: 1rem; */
+  font-size: 18px; 
+   padding-bottom: 20px;
+}
+.messageStatus_cancel{
+  color: red;
+  padding-top: 2rem;
+  font-size: 18px;
+ 
+}
+
+
+.cellWrapper {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  
+}
+.cellImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+  margin-bottom: -7px;
+}
+
+/* .TotalPrice{
+ 
+} */
+.TotalPrice_item{
+  padding-left: 20%;
+  display: flex;
+  gap: 134px;
+  flex-wrap: wrap;
+  font-weight: bold;
+  width: 80%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Màu và kiểu đường gạch dưới */
+    padding-bottom: 5px; 
+}
+.TotalPrice_item1{
+  width: 40%;
+}
+.TotalPrice_item2{
+  display: flex;
+}
+
+.VND{
+  text-decoration: underline;
+}
+
+/* review star */
+.detailsReview {
+  padding-bottom: 10px;
+  padding-left: 50px; 
+  padding-right: 50px;/* Khoảng cách dưới của mỗi phần tử đánh giá */
+}
+
+.itemTitleCmt {
+  margin-bottom: 5px; 
+ font-size: 18px;
+}
+.itemReview{
+  padding-left: 30px;
+}
+.detailItemReview {
+  margin-bottom: 10px; /* Khoảng cách dưới của mỗi phần tử trong đánh giá */
+}
+.itemValueContent{
+  font-size: 16px;
+
+}
+.itemValueDate{
+  font-size: 14px;
+  color: #555;
+}
+.starRating {
+  display: inline-block;
+  font-size: 0; /* Loại bỏ khoảng trống giữa các ngôi sao */
+}
+
+.starRating img {
+  width: 20px; /* Kích thước của mỗi ngôi sao */
+  height: auto; /* Đảm bảo tỷ lệ khung hình không bị thay đổi */
+  vertical-align: middle; /* Canh chỉnh theo chiều dọc để ngôi sao nằm giữa chữ */
+}
+
+.separator {
+  margin-top: 20px; /* Khoảng cách từ phần tử trước đến gạch ngang */
+ 
+}
+
+
+.deleteButtonReview {
+  padding: 2px 5px;
+  width: 23px;
+  border-radius: 5px;
+  color: crimson;
+  border: 1px dotted rgba(220, 20, 60, 0.6);
+  cursor: pointer;
+  &:hover{
+    background-color: #fad3c6;
+    }
+}
+
+.deleteButtonReview:hover {
+  color: red; /* Màu sẽ thay đổi khi di chuột qua nút */
+}
+
+.success-message {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  background-color: #e7f1e4;
+  color: #0e4e1d;
+  padding: 30px 30px;
+  border-radius: 5px;
+  
+}
+
+.progress-bar {
+  height: 5px;
+  background-color: #28a745;
+  width: 100%;
+  animation: progressBar 2s linear forwards; /* Thời gian chạy: 3 giây */
+}
+
+@keyframes progressBar {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+.showMoreButton {
+  padding: 10px 18px;
+  width: 100px;
+  align-items: center;
+ font-weight: bold;
+  border-radius: 5px;
+  color: darkblue;
+  border: 1px dotted rgba(0, 0, 139, 0.596);
+  cursor: pointer;
+  text-align: center; /* Căn giữa nội dung của nút */
+  margin-left: 43%;
+  background-color: #dfebf2;
+}
+
+.showMoreButton:hover {
+  background-color: #8fd8f5;
+}
+
+
+/* loc theo so sao */
+.star-container {
+  display: flex; /* Hiển thị các số sao trên cùng một dòng */
+}
+
+/* Định dạng cho mỗi số sao */
+.star-countDetail {
+  margin-right: 10px; /* Khoảng cách giữa các số sao */
+  display: flex;
+  padding: 5px 10px; /* Độ lớn của số sao */
+  border: 1px solid #ccc; /* Viền của số sao */
+  border-radius: 5px; /* Bo tròn viền */
+  cursor: pointer; /* Con trỏ khi di chuyển vào số sao */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Hiệu ứng thay đổi màu */
+}
+
+/* Định dạng khi di chuột vào số sao */
+.star-countDetail:hover {
+  background-color: #f0f0f0; /* Màu nền khi di chuột vào */
+  border-color: #999; /* Màu viền khi di chuột vào */
+  color: #333; /* Màu chữ khi di chuột vào */
+}
+
+.textStar{
+  font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    color: #191b97;
+
+}

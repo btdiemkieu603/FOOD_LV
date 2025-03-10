@@ -1,0 +1,226 @@
+
+.sidebar2 {
+  position: fixed;
+  top: 7%;
+  right: 0;
+  width: 26%;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  padding-right: 2%;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  overflow-y: auto; /* Hiển thị thanh trượt dọc nếu nội dung vượt chiều cao */
+  overflow-x: hidden; 
+  max-height: 644px;
+}
+
+.sidebar-order-table {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.sidebar-header {
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.cart-items {
+  margin-top: 20px;
+  flex-grow: 1;
+}
+
+.empty-cart {
+  text-align: center;
+  color: #999;
+  font-size: 1.2rem;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.cart-item-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.cart-item-details {
+  flex: 1;
+}
+
+.cart-item-name {
+  font-weight: bold;
+}
+
+.cart-item-price,
+.cart-item-quantity,
+.cart-item-total {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-left: 2%;
+}
+
+.cart-summary {
+  margin-top: 20px;
+  padding: 10px 0;
+}
+
+.cart-summary-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.checkout-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  /* width: 100%; */
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.checkout-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.promo-code {
+  margin-top: 20px;
+}
+
+.promo-code-input {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.promo-code-input input {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.promo-code-input button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+
+errorMsg {
+  max-width: 100%;
+  font-size:0.75rem;
+  color:rgb(248, 106, 106);
+}
+
+.success-message {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  background-color: #f5f9f4;
+  -webkit-box-shadow: 2px 4px 10px 2px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(86, 112, 94, 0.47);
+  color: #0e4e1d;
+  padding: 30px 30px;
+  border-radius: 5px;
+  z-index: 2000;
+}
+.err-message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #f5f9f4;
+  -webkit-box-shadow: 2px 4px 10px 2px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(197, 141, 140, 0.47);
+  color: #b73a1a;
+  padding: 30px 30px;
+  border-radius: 5px;
+  z-index: 2000;
+}
+.progress-bar-err {
+  height: 5px;
+  background-color: #c24c31;
+  width: 100%;
+  animation: progressBar 1s linear forwards; /* Thời gian chạy: 3 giây */
+}
+.progress-bar {
+  height: 5px;
+  background-color: #28a745;
+  width: 100%;
+  animation: progressBar 1s linear forwards; /* Thời gian chạy: 3 giây */
+}
+
+@keyframes progressBar {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+
+
+.food-item-counter2 {
+  position: absolute;
+  
+  right: 0px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px;
+  border-radius: 50px;
+  background-color: #fff;
+}
+
+.food-item-counter img {
+  width: 30px;
+  cursor: pointer;
+}

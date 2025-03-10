@@ -1,0 +1,62 @@
+.chart{
+    flex: 4;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+     box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+     padding: 10px;
+/* position: relative; */
+     .title{
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: 12px;
+        color: gray;
+     }
+
+     .chartGrid {
+        stroke: rgb(228, 225, 225);
+      }
+      /* Điều chỉnh kích thước của biểu đồ */
+.recharts-wrapper {
+   width: 100%;
+   height: 100%;
+}
+
+/* Điều chỉnh kích thước container của biểu đồ */
+.recharts-responsive-container {
+   width: 100%;
+   height: 400px; /* Sửa chiều cao của container */
+}
+
+}
+.recharts-default-legend{
+   margin-top: -100px;
+}
+
+.chart text {
+   font-size: 14px;
+   pointer-events: none; /* Ngăn phần trăm che phần tooltip */
+} 
+
+.chart text.value {
+   font-weight: bold;
+}
+
+.chart text.percentage {
+   font-size: 10px;
+   fill: white;
+   /* dominant-baseline: middle; Đặt vị trí dọc của văn bản */
+  text-anchor: middle; /* Đặt vị trí ngang của văn bản */
+}
+
+
+button .revenue{
+   padding-left: 17%;
+}
+
+.textResult{
+   font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    color: #191b97;
+    /* background-color: #96b3f7; */
+}
+

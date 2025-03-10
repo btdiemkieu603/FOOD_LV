@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".controller.ReviewManagement"
+    android:id="@+id/reviewLayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/ivExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/cancel" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginVertical="10dp"
+            android:fontFamily="@font/baloo"
+            android:text="Đánh giá"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên món: "
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="15dp"
+            android:textColor="@color/red"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/tvProName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Cơm gà chiên xù"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá: "
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="15dp"
+            android:textColor="@color/red"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="20000đ"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thành phần: "
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="15dp"
+            android:textColor="@color/red"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="top"/>
+
+        <TextView
+            android:id="@+id/tvDes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Thanh phan 1, Thanh phan 2, Thanh phan 3"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Khách hàng:  "
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="15dp"
+            android:textColor="@color/red"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="top"/>
+
+        <TextView
+            android:id="@+id/tvCusName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Diem Kieu"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đánh giá:  "
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="15dp"
+            android:textColor="@color/red"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_vertical"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progressDrawable="@drawable/ratingbar_yellow"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_gravity="center_vertical"
+            android:numStars="5"
+            android:rating="5"
+            android:stepSize="0.5"
+            android:isIndicator="false"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bình luận:  "
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="15dp"
+        android:textColor="@color/red"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="top"
+        android:layout_margin="10dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="top"
+        android:hint="Nhập bình luận"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gửi"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/red"
+        android:layout_margin="20dp"
+        android:padding="10dp"/>
+</LinearLayout>

@@ -1,0 +1,229 @@
+
+
+
+.new {
+  width: 100%;
+  display: flex;
+ 
+
+  .newContainer {
+    flex: 6;
+
+    .top{
+      padding-top: 5px;
+    }
+    .bottom {
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+       padding-bottom: 10px;
+      /* margin: 10px; */ 
+     
+
+      h1 {
+        color: rgb(53, 13, 200);
+        font-size: 25px;
+      }
+      .title {
+        text-align: center;
+       
+      }
+      .left {
+        flex: 1;
+        text-align: center;
+
+        img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+.column2{
+  flex: 2;
+
+      .column {
+        margin: 15px;
+        padding-bottom: 20px;
+        /* padding-top: 20px; */
+        /* flex: 2;
+        display: flex; */
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        form {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 25px;
+          justify-content: space-around;
+
+          .formInput {
+            width: 40%;
+
+            label {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              font-size: 1.2rem;
+              
+              .icon {
+                cursor: pointer;
+              }
+            }
+          }
+           
+          }
+
+        }
+      }
+      
+    }
+  } 
+}
+
+      
+ 
+
+
+.newUserForm {
+  width: 60%;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    font-weight: 500;
+    font-size: 0.8rem;
+    margin-left: 22%;
+    /* width: 60%; */
+  }
+  
+  
+  input {
+   
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.25rem;
+    outline: none;
+    width: 80%;
+    font-size: 14px;
+    padding-left: 0px;
+  }
+  .pass{
+    width: 100%;
+    display: flex;
+    
+    .icon{
+      color: rgb(168, 184, 198);
+      cursor: pointer;
+     
+      
+     }
+  }
+  
+  button {
+    font-size: 1rem;
+    border-radius: 8px;
+    
+    width: 150px;
+    padding: 10px;
+    border: none;
+    background-color: teal;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 28%;
+  }
+  
+  buttonCart {
+    font-size: 1rem;
+    border-radius: 8px;
+    
+    width: 150px;
+    padding: 10px;
+    border: none;
+    background-color: teal;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 2%;
+  }
+  
+  .errorMsg {
+    max-width: 100%;
+    font-size:0.75rem;
+    color:rgb(248, 106, 106);
+  }
+
+  .success-message {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    background-color: #f5f9f4;
+    -webkit-box-shadow: 2px 4px 10px 2px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(86, 112, 94, 0.47);
+    color: #0e4e1d;
+    padding: 30px 30px;
+    border-radius: 5px;
+  }
+  .err-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #f5f9f4;
+    -webkit-box-shadow: 2px 4px 10px 2px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(197, 141, 140, 0.47);
+    color: #b73a1a;
+    padding: 30px 30px;
+    border-radius: 5px;
+  }
+  .progress-bar-err {
+    height: 5px;
+    background-color: #c24c31;
+    width: 100%;
+    animation: progressBar 1s linear forwards; /* Thời gian chạy: 3 giây */
+  }
+  .progress-bar {
+    height: 5px;
+    background-color: #28a745;
+    width: 100%;
+    animation: progressBar 1s linear forwards; /* Thời gian chạy: 3 giây */
+  }
+  
+  @keyframes progressBar {
+    0% {
+      width: 100%;
+    }
+    100% {
+      width: 0%;
+    }
+  }
+
+  select{
+    width: 394px;
+  }
+
+  #description{
+    width: 394px;
+  }
+
+  .arrow-back-icon {
+    /* Thiết lập kích thước và căn giữa */
+    width: 26px; /* Kích thước */
+    height: 26px; /* Kích thước */
+    display: flex; /* Hiển thị theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    cursor: pointer; /* Đổi con trỏ chuột thành hình bàn tay khi di chuột qua */
+    border: 1px solid blue; /* Đường viền màu xanh */
+    border-radius: 50%; /* Đường viền tròn */
+    margin-left: 5px;
+    margin-top: 5px;
+    /* Hiệu ứng hover */
+    /*transition: all 0.3s ease; /* Hiệu ứng chuyển động mềm mại */
+}
+
+.arrow-back-icon:hover {
+    /* Thêm đường viền như button khi hover */
+   background-color: #e2e8f9;
+}

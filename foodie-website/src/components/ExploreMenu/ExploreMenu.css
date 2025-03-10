@@ -1,0 +1,107 @@
+.explore-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-right: 21%;
+}
+
+.explore-menu h1 {
+  color: var(--dark);
+  font-weight: 500;
+}
+
+.explore-menu-text {
+  max-width: 100%;
+  color: var(--gray);
+  text-align: justify;
+}
+
+.explore-menu-list {
+  /* width: 50%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+  /* margin: 10px 2px; */
+  padding: 10px 5px;
+  overflow-x: scroll;
+}
+
+.explore-menu-list::-webkit-scrollbar {
+  display: none;
+}
+/* 
+.explore-menu-list-item img {
+  width: 7.5vw;
+  min-width: 80px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.2s ease;
+} */
+
+.explore-menu-list-item {
+
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container {
+  width: 7.5vw; /* Đặt kích thước khung */
+  min-width: 80px;
+  height: 7.5vw;
+  min-height: 80px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid transparent; /* Viền ban đầu trong suốt */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease;
+}
+
+.image-container img {
+  width: 100%; /* Đảm bảo ảnh lấp đầy khung */
+  height: 100%;
+  object-fit: cover; /* Giúp ảnh giữ trọng tâm */
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.image-container:hover {
+  /* border: 2px solid #ff9900;  */
+  border: 2px solid #237f3e; 
+  /* border: 2px solid #30d662;  */
+  transform: scale(1.05); /* Tùy chọn: Phóng to nhẹ */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+/* 
+.explore-menu-list-item img:hover {
+  border: 2px solid #ff9900; 
+  transform: scale(1.05);
+} */
+.explore-menu-list-item p {
+  margin-top: 10px;
+  color: var(--gray);
+  font-size: max(1.2vw, 16px);
+  cursor: pointer;
+}
+
+.explore-menu hr {
+  margin: 10px 0;
+  height: 2px;
+  background-color: #e2e2e2;
+  border: none;
+}
+
+.explore-menu-list-item .active {
+  border: 4px solid var(--primary);
+  padding: 2px;
+}
+
+@media (max-width: 1050px) {
+  .explore-menu-text {
+    max-width: 100%;
+    font-size: 14px;
+  }
+}

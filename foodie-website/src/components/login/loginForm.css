@@ -1,0 +1,78 @@
+.infoform {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-left: 14%;
+    width: 80%;
+  }
+  label {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  input {
+    border: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.25rem;
+    outline: none;
+    width: 80%;
+  }
+  .pass{
+    width: 100%;
+    display: flex;
+    
+    .icon{
+      color: rgb(168, 184, 198);
+      cursor: pointer;
+     
+      
+     }
+  }
+  
+  button {
+    cursor: pointer;
+    align-self: flex-end;
+    padding: 0.5rem;
+    margin-top: 20px;
+    background-color: rgb(119, 119, 252);
+    color: white;
+    border: none;
+    font-size: 1rem;
+    border-radius: 8px;
+  }
+  
+  .errorMsg {
+    max-width: 100%;
+    font-size:0.75rem;
+    color:rgb(248, 106, 106);
+  }
+
+  
+  .success-message {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    background-color: #e7f1e4;
+    color: #0e4e1d;
+    padding: 30px 30px;
+    border-radius: 5px;
+    
+  }
+  
+  .progress-bar {
+    height: 5px;
+    background-color: #28a745;
+    width: 100%;
+    animation: progressBar 2s linear forwards; /* Thời gian chạy: 3 giây */
+  }
+  
+  @keyframes progressBar {
+    0% {
+      width: 100%;
+    }
+    100% {
+      width: 0%;
+    }
+  }

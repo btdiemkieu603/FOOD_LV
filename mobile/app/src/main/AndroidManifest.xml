@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Mobile"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".popupController.ChangeAddressDialog"
+            android:exported="false" />
+        <activity android:name=".activities.WebViewActivity" />
+        <activity
+            android:name=".controller.ReviewManagement"
+            android:exported="false" />
+        <activity
+            android:name=".controller.OrderDetail"
+            android:exported="false" />
+        <activity
+            android:name=".controller.DiscountManagement"
+            android:exported="false" />
+        <activity
+            android:name=".controller.OrderManagement"
+            android:exported="false" />
+        <activity
+            android:name=".controller.PaymentInformation"
+            android:exported="false" />
+<!--        <activity android:name=".controller.PaymentInformation"-->
+<!--            android:exported="true">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.VIEW" />-->
+<!--                <category android:name="android.intent.category.DEFAULT" />-->
+<!--                <category android:name="android.intent.category.BROWSABLE" />-->
+<!--                <data android:scheme="myapp" android:host="vnpay_return" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+        <activity
+            android:name=".controller.ProfileManagement"
+            android:exported="false" />
+        <activity
+            android:name=".controller.CartManagement"
+            android:exported="false" />
+        <activity
+            android:name=".controller.ProductDetail"
+            android:exported="false" />
+        <activity
+            android:name=".controller.ProductMenu"
+            android:exported="false" />
+        <activity
+            android:name=".controller.CategoryMenu"
+            android:exported="false" />
+        <activity
+            android:name=".controller.HomePage"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".controller.ForgetPassword"
+            android:exported="false" />
+        <activity
+            android:name=".controller.Register"
+            android:exported="false" />
+        <activity
+            android:name=".controller.Login"
+            android:exported="false">
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

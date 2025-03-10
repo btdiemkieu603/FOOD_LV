@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutCartManager">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@color/red">
+
+            <ImageView
+                android:id="@+id/ivExit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cancel"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginVertical="10dp"
+                android:fontFamily="@font/baloo"
+                android:text="Giỏ hàng"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:id="@+id/ivLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/location"
+                    android:layout_marginRight="10dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:padding="20dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tổng cộng: "
+                android:fontFamily="@font/baloo"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_alignParentStart="true"/>
+            <TextView
+                android:id="@+id/tvSum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="150000VND"
+                android:fontFamily="@font/baloo"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/red"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAddProduct"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Thêm món"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:fontFamily="@font/baloo"
+                android:background="@drawable/btn_add_cart"
+                app:backgroundTint="@color/red"
+                android:layout_weight="1"
+                android:paddingVertical="10dp"
+                android:layout_marginRight="20dp"/>
+
+            <Button
+                android:id="@+id/btnPayment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Thanh toán"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:fontFamily="@font/baloo"
+                android:background="@drawable/btn_login"
+                app:backgroundTint="@color/btnLogin"
+                android:paddingVertical="10dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".controller.ProductDetail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/circle_left_black"
+                android:alpha="0.6"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:elevation="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginHorizontal="30dp"
+                app:cardBackgroundColor="@color/background_card_product">
+                <ImageView
+                    android:id="@+id/ivProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:src="@drawable/product01"/>
+            </androidx.cardview.widget.CardView>
+
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/profileProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cơm gà sối mỡ"
+                android:textSize="20dp"
+                android:fontFamily="@font/baloo"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25000đ"
+                android:textSize="20dp"
+                android:fontFamily="@font/baloo"
+                android:textStyle="bold"
+                android:textColor="@color/red"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mô tả món ăn"
+            android:textSize="20dp"
+            android:fontFamily="@font/baloo"
+            android:textColor="@color/black"
+            android:layout_alignBottom="@+id/profileProduct"
+            android:layout_marginHorizontal="20dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:paddingVertical="5dp">
+
+            <ImageView
+                android:id="@+id/ivMinus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:background="@drawable/add_remove_bg"
+                android:src="@drawable/remove"
+                android:backgroundTint="@color/red"/>
+
+            <TextView
+                android:id="@+id/tvQuantity"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:padding="10dp"
+                android:background="@drawable/quantity_input_cart"
+                android:fontFamily="@font/baloo"
+                android:textColor="@color/black"
+                android:text="1"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/ivPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:background="@drawable/add_remove_bg"
+                android:src="@drawable/add"
+                android:backgroundTint="@color/red"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:background="@color/black"
+            android:alpha="0.7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bình luận"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/baloo"
+            android:layout_marginHorizontal="20dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvReview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="100dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="20dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/btnAddCart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Thêm vào giỏ"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:fontFamily="@font/baloo"
+            android:background="@drawable/btn_add_cart"
+            app:backgroundTint="@color/red"
+            android:layout_weight="1"
+            android:paddingVertical="10dp"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:id="@+id/btnBuyNow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Mua ngay"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:fontFamily="@font/baloo"
+            android:background="@drawable/btn_login"
+            app:backgroundTint="@color/btnLogin"
+            android:paddingVertical="10dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+</RelativeLayout>

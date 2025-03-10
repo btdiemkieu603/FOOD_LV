@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Foodie</string>
+    <string name="dangnhap">VUI LÒNG ĐĂNG NHẬP</string>
+    <string name="term">Tôi đồng ý với chính sách, qui định chung và thông báo bảo mật cá nhân</string>
+    <string name="forgetPassword">Vui lòng nhập số điện thoại vào ô bên dưới\nđể tiến hành lấy lại mật khẩu</string>
+    <string name="loginPopupText">Số điện thọai hoặc mật khẩu không đúng\nVui lòng nhập lại</string>
+</resources>

@@ -1,0 +1,221 @@
+.datatable {
+    height:85%;
+    
+    padding: 8px;
+    
+   
+  
+      
+      button{
+        max-width: 30px;
+      }
+      .cellWithImg {
+        display: flex;
+        align-items: center;
+    
+        .cellImg {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          object-fit: cover;
+          margin-right: 20px;
+        }
+      }
+    
+    .cellWithStatus {
+      padding: 5px;
+      border-radius: 5px;
+  
+      &.Active, &.true, &.Completed{
+        color: green;
+        background-color: rgba(0, 128, 0, 0.151);
+      }
+      &.Blocked, &.false, &.watingConfirmation, &.Processing{
+        color: rgb(192, 100, 8);
+        background-color: rgba(189, 189, 3, 0.103);
+      }
+      &.beingTransported  {
+        color: blue;
+        background-color: rgba(115, 178, 242, 0.151);
+      } 
+      &.Cancel{
+        color: red;
+        background-color: rgba(236, 118, 45, 0.151);
+      }
+      /* &.Hoạt, &.Đang{
+        color: green;
+        background-color: rgba(0, 128, 0, 0.151);
+      }
+      &.Hết, &.Hủy {
+        color: red;
+        background-color: rgba(236, 118, 45, 0.151);
+      }
+      &.Khóa, &.Lưu, &.Đã {
+        color: goldenrod;
+        background-color: rgba(189, 189, 3, 0.103);
+      }
+      &.Chờ {
+        color: blue;
+        background-color: rgba(115, 178, 242, 0.151);
+      } */
+    }
+  
+    .cellAction {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+  
+      .viewButton {
+        padding: 2px 5px;
+        border-radius: 5px;
+        color: darkblue;
+        border: 1px dotted rgba(0, 0, 139, 0.596);
+        cursor: pointer;
+        &:hover{
+          background-color: #c6ebfa;
+          }
+      }
+      
+      .deleteButton {
+        padding: 2px 5px;
+        border-radius: 5px;
+        color: crimson;
+        border: 1px dotted rgba(220, 20, 60, 0.6);
+        cursor: pointer;
+        &:hover{
+          background-color: #fad3c6;
+          }
+      }
+      .editButton {
+        padding: 2px 5px;
+        border-radius: 5px;
+        color: rgb(220, 112, 4);
+        border: 1px dotted rgba(220, 133, 20, 0.6);
+        cursor: pointer;
+        &:hover{
+          background-color:  #fafac6;
+        }
+          
+      }
+      .blockButton {
+        padding: 2px 5px;
+        border-radius: 5px;
+        color: rgb(220, 112, 4);
+        border: 1px dotted rgba(220, 133, 20, 0.6);
+        cursor: pointer;
+        &:hover{
+          background-color: #fafac6;
+          }
+      }
+      .activeButton {
+        padding: 2px 5px;
+        border-radius: 5px;
+        color: rgb(32, 161, 15);
+        border: 1px dotted rgba(4, 106, 23, 0.6);
+        cursor: pointer;
+        &:hover{
+          background-color: #cbf6c8;
+          }
+      }
+    }
+  }
+  
+  .success-message {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    background-color: #e7f1e4;
+    color: #0e4e1d;
+    padding: 30px 30px;
+    border-radius: 5px;
+    
+  }
+  
+  .progress-bar {
+    height: 5px;
+    background-color: #28a745;
+    width: 100%;
+    animation: progressBar 2s linear forwards; /* Thời gian chạy: 3 giây */
+  }
+  
+  @keyframes progressBar {
+    0% {
+      width: 100%;
+    }
+    100% {
+      width: 0%;
+    }
+  }
+/* 
+  .search {
+    display: flex;
+    align-items: center;
+    border: 0.5px solid lightgray;
+    padding: 6px;
+    border-radius: 5px;
+    height: 22px;
+      input {
+        border: none;
+        outline: none;
+        background: transparent;
+        padding: 1px;
+        &::placeholder {
+          font-size: 16px;
+        }
+        
+        
+      }
+      .icon{
+          cursor: pointer;
+          margin-top: 5px;
+        }
+    
+        &:hover{
+          color: #7451f8;
+          }
+      
+    
+  } */
+  
+
+
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 11px;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 40%;
+}
+
+.search-bar input[type="text"]:focus {
+    outline: none;
+    border-color: #191b97; /* Màu khi input được focus */
+}
+
+.search-bar input[type="text"]::placeholder {
+    color: #aaa; /* Màu của placeholder */
+}
+
+.search-bar .MuiSvgIcon-root {
+    color: #191b97; /* Màu của biểu tượng làm mới */
+    cursor: pointer;
+}
+
+
+.selectStatus {
+  margin-left: 11px;
+    padding: 7px;
+    width: 9%;
+    border: 1px solid #a7a5a5;
+    border-radius: 4px;
+}
+.textStatus{
+  margin-left: 38px;
+}
